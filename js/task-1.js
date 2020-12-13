@@ -14,3 +14,6 @@ const user = {
   premium: true,
 };
 
+const keys = Object.keys(user);
+
+console.log(keys);
