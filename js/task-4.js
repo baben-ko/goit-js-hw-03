@@ -4,7 +4,15 @@
 // Каждое поле объекта, передаваемого в функцию, имеет вид "имя": "зарплата".
 
 const countTotalSalary = function(employees) {
-  // твой код
+  const values = Object.values(employees);
+  let total = 0;
+
+  for (const value of values) {
+
+    total += value;
+    
+  }
+  return total;
 };
 
 /*
