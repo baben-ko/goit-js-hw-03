@@ -3,9 +3,14 @@
 // возвращает имя самого продуктивного(который выполнил больше всех задач).
 // Сотрудники и кол - во выполненых задач содержатся как свойства объекта в формате "имя": "кол-во задач".
 
-const findBestEmployee = function(employees) {
-  // твой код
+const findBestEmployee = function (employees) {
+  
+  for (const key in employees) {
+    if (employees[key] === Math.max(...Object.values(employees)))
+      return key;
+  }
 };
+
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
