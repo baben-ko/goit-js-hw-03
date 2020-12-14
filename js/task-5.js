@@ -9,8 +9,14 @@ const products = [
   { name: 'Захват', price: 1200, quantity: 2 },
 ];
 
-const getAllPropValues = function(arr, prop) {
-  // твой код
+const getAllPropValues = function (arr, prop) {
+  const allpropValues = [];
+  for (const element of arr) {
+    if (element[prop] !== undefined) {
+      allpropValues.push(element[prop]);
+    }
+  }
+  return allpropValues;
 };
 
 /*
