@@ -12,6 +12,16 @@ const findBestEmployee = function (employees) {
 };
 
 
+
+// второй вариант
+
+// const findBestEmployee = function(employees) {
+//    return Object.keys(employees)[
+//     Object.values(employees).indexOf(Math.max (...Object.values(employees) ))
+//   ];
+// };
+
+
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
